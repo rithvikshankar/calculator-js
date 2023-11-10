@@ -1,5 +1,71 @@
+:root {
+  --orange: #ff9f0a;
+  --button-height: 4rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: #121212;
+  font-family: "Montserrat", "sans-serif";
+}
+
+h1 {
+  color: white;
+  margin: 1rem 0 7rem 0;
+}
+
+.center-wrapper {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 4rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.screen {
+  grid-column: span 4;
+  height: var(--button-height);
+}
+
+.button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 4rem;
+  height: var(--button-height);
+  border-radius: 50%;
+  border: none;
+  background-color: #333333;
+  color: white;
+}
+
+.func-button {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.symbol-button {
+  background-color: var(--orange);
+  font-size: 2rem;
+}
+
+.zero-button {
+  width: 8.5rem;
+  border-radius: 8rem;
+  grid-column: span 2;
 }

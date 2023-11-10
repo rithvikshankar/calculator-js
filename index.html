@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="center-wrapper flex flex-col">
+      <div class="container">
+        <!-- Calculator screen -->
+        <div class="screen"></div>
+
+        <!-- Function key buttons -->
+        <button class="button func-button">AC</button>
+        <button class="button func-button">+/-</button>
+        <button class="button func-button">%</button>
+        <button class="button symbol-button">&divide;</button>
+
+        <!-- First number buttons -->
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button symbol-button">&times;</button>
+
+        <!-- Second number buttons -->
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button symbol-button">-</button>
+
+        <!-- Third number buttons -->
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button symbol-button">+</button>
+
+        <!-- Fourth number buttons -->
+        <button class="button zero-button">0</button>
+        <button class="button">.</button>
+        <button class="button symbol-button">=</button>
+      </div>
+    </div>
+  </body>
 </html>
